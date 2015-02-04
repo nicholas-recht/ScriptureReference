@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity$PlaceholderFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/book_label"
+        android:id="@+id/book_label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+    <EditText
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/book_label"
+        android:layout_alignParentTop="true"
+        android:id="@+id/book_edit"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chapter_label"
+        android:id="@+id/chapter_label"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/book_edit" />
+    <EditText
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/chapter_label"
+        android:layout_below="@id/book_edit"
+        android:id="@+id/chapter_edit"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/verse_label"
+        android:id="@+id/verse_label"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/chapter_edit" />
+    <EditText
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/verse_label"
+        android:layout_below="@id/chapter_edit"
+        android:id="@+id/verse_edit"/>
+    <Button
+        android:text="@string/button_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/verse_edit"
+        android:onClick="clickMe"/>
+
+</RelativeLayout>
